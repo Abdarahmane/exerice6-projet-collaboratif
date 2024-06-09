@@ -1,0 +1,109 @@
+:root {
+    --primary: #007bff;
+    --lightprimary: #0056b3;
+    --white: #ffffff;
+    --silver: #bcbcbc9e;
+    --defaultLinkcolor: #333;
+    --yellow: #ffd700;
+    --muted: #777777;
+    --whiteBG: #f8fafc;
+    --sub: #216583;
+
+ }
+
+
+.sign-container{
+    margin: auto;
+    padding: auto;
+    width: 90%;
+}
+.tiltle-ct{
+    text-align: center;
+    font-size: 25px;
+}
+form{
+    width: 80%;
+    margin: auto;
+    padding: auto;
+}
+.form-grp{
+ display: flex;
+ flex-direction: column;
+ margin-left: 200px;
+}
+.form-grp input,.form-grp label{
+    width: 70%;
+    margin: 10px;
+    
+
+}
+input{
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+}
+button{
+    color: white;
+    font-size: 20px;
+    background-color: var(--primary);
+    border-radius: 6px;
+}
+.first-button {
+    margin: 5% 20% 0 35%;
+    width: 30%;
+    height: 35px;
+}
+.down-form{
+    width: 59%;
+    margin-left: 200px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.second-button{
+    width: 90px;
+    height: 35px;
+}
+   
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+@media (max-width:800px){
+
+    @media (max-width: 800px) {
+
+        .sign-container {
+            display: block;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    
+        .form-grp {
+            margin-left: 0;
+            align-items: center;
+        }
+    
+        .form-grp input, .form-grp label {
+            width: 100%;
+            margin: 10px 0;
+        }
+    
+        .down-form {
+            width: 100%;
+            margin-left: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .first-button, .second-button {
+            width: 250px;
+            margin-left: 60px
+        }
+        .second-button {
+            margin-right: 60px;
+        }
+    }
+}
