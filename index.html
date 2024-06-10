@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabinet dentaire</title>
-    <link rel="stylesheet" href="asset/css/slyle.css">
-    <script src="page.JS"></script>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <script src="page.js"></script>
 </head>
 <body>
     <header>
@@ -18,19 +18,19 @@
                 <ul class="sidebar">
                     <li onclick=hidesidebar()><a href="#"><img src="asset/images/close_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="#"></a></li>
                     <li id="nav-home"><a href="index.html">Home</a></li>
-                    <li><a href="grid">Services</a></li>
-                    <li><a href="who-are">About us</a></li>
-                    <li><a href="form">Appoinment</a></li>
-                    <li><a href="Sign.html">Sign up</a></li>
-                    <button id="btn"><a href="login.html"> Login</a></button>
+                    <li><a href="#key-service-area">Services</a></li>
+                    <li><a href="#who-are">About us</a></li>
+                    <li><a href="#form">Appoinment</a></li>
+                    <li><a href="#Sign.html">Sign up</a></li>
+                    <li><a id="btn" href="login.html"> Login</a></li>
                 </ul>
                 <ul>
                     <li id="nav-home" class="hideonmobile" ><a href="index.html">Home</a></li>
-                    <li class="hideonmobile"><a href="grid">Services</a></li>
-                    <li class="hideonmobile"><a href="who-are">About us</a></li>
-                    <li class="hideonmobile"><a href="form">Appointment</a></li>
+                    <li class="hideonmobile"><a href="#key-service-area">Services</a></li>
+                    <li class="hideonmobile"><a href="#who-are">About us</a></li>
+                    <li class="hideonmobile"><a href="#form">Appointment</a></li>
                     <li class="hideonmobile"><a href="Sign.html">Sign up</a></li>
-                    <button id="btn" class="hideonmobile"><a href="login.html"> Login</a></button>
+                    <li class="hideonmobile"><a id="btn" class="hideonmobile" href="login.html"> Login</a></li>
                     <li class="menu-button" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="40" viewBox="0 0 24 24" style="fill: rgba(14, 166, 228, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg></a></li>
                 </ul>
              </nav>
@@ -78,7 +78,7 @@
                 </div>       
              </div>
       </section>
-      <section class="key-service-area">
+      <section id="key-service-area">
         <div class="between">
                 <div id="doct-pic">
                    <img src="asset/images/doctor.png" alt="ServicesImages" />
@@ -225,7 +225,7 @@
                             <input type="date" name="date" id="date" placeholder="DD/MM/YY">
                        </div>
                        <div class="form-group">
-                          <label for="d0c">Doctor</label>
+                          <label for="doctor">Doctor</label>
                           <select name="doctor" id="dc">
                               <option value="Dr. Pritis Barua">Dr. Pritis Barua</option>
                               <option value="Dr. jeanette Hoff">Dr. jeanette Hoff</option>
@@ -237,9 +237,9 @@
                        <label for="message">Message</label>
                       <textarea id="message" name="message" required placeholder="Includ a mesage..."></textarea>
                     </div>
-                    <div class="form-group" id="checkbox">
-                       <input type="checkbox" class="checkbox" name="check" id="check">
-                       <label for="" id="checkbox">You agreeto our friendly privacy policy</label>
+                    <div class="form-group">
+                       <label for="" id="checkbox">
+                        <input type="checkbox">You agreeto our friendly privacy policy</label>
                     </div>
                     <div class="form-group" id="button-apptt">
                        <button class="common-button">I confirm</button> 
