@@ -51,7 +51,8 @@ button{
 .first-button {
     margin: 5% 20% 0 35%;
     width: 30%;
-    height: 35px;
+    height: 58px;
+    font-size: 20px;
 }
 .down-form{
     width: 59%;
@@ -62,7 +63,8 @@ button{
 }
 .second-button{
     width: 90px;
-    height: 35px;
+    height: 58px;
+    font-size: 20px;
 }
    
 a{
@@ -70,7 +72,7 @@ a{
     text-decoration: none;
 }
 
-@media (max-width:800px){
+
 
     @media (max-width: 800px) {
 
@@ -100,10 +102,13 @@ a{
     
         .first-button, .second-button {
             width: 250px;
-            margin-left: 60px
+            margin-left: 60px;
+            font-size: 20px;
+            height: 58px;
         }
         .second-button {
             margin-right: 60px;
+            font-size: 20px;
+            height: 58px;
         }
     }
-}
